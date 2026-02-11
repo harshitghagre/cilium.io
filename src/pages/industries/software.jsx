@@ -84,7 +84,7 @@ const bulletSection1 = {
     'Cilium is designed to be configured using an API. This aligns with the GitOps principles, where the desired state of infrastructure is declared in code and stored in Git repositories. The API-driven model of Cilium enables organizations to manage, scale, and modify their infrastructure using code, ensuring consistency and repeatability.',
   ],
   imageSrc: SoftwareImage1,
-  ImageAlt: 'cilium saas tools and dbs illustration',
+  imageAlt: 'cilium saas tools and dbs illustration',
 };
 
 const bulletSection2 = {
@@ -95,7 +95,7 @@ const bulletSection2 = {
     'By mitigating disputes between application and infrastructure operation teams, Cilium accelerates the investigation of application-layer issues, enabling frictionless, self-service root cause analysis for developers.',
   ],
   imageSrc: SoftwareImage2,
-  ImageAlt: 'hubble 5xx graphs',
+  imageAlt: 'hubble 5xx graphs',
   imageRight: false,
 };
 
@@ -105,7 +105,7 @@ const bulletSection3 = {
     "For enterprises building muti-tenant architectures, Cilium enforces isolation between tenants and ensures different teams can safely run on the same platform. With Cilium's multi-tenant observability features, teams can easily access application metrics without compromising security. Traditional logging systems often fall short when segregating data by tenants. Cilium provides multi-tenant, self-service access using the OpenID Connect (OIDC) standard. Teams can have RBAC-based access to relevant data and connectivity metrics, such as network policy drops, DNS lookup failures, and more.",
   ],
   imageSrc: SoftwareImage3,
-  ImageAlt: 'hubble architecture',
+  imageAlt: 'hubble architecture',
 };
 
 const softwareTalks = [

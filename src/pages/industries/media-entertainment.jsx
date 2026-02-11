@@ -73,7 +73,7 @@ const seznamTestimonial = {
 };
 
 const mediaResources = [
-   {
+  {
     imageSrc: TikTokOfficeImage,
     imageAlt: 'tiktok office building',
     title: 'TikTok\'s IPv6 Journey To Cilium',
@@ -82,7 +82,7 @@ const mediaResources = [
     description:
       'TikTok migrated clusters to use Cilium for its advanced security features like mutual authentication, along with high performance networking and enhanced observability.',
   },
-  
+
   {
     imageSrc: YahooOfficeImage,
     imageAlt: 'yahoo office building',
@@ -162,7 +162,7 @@ const mediaUsecases = [
 ];
 
 const MediaEntertainmentPage = () => (
-  <MainLayout>
+  <MainLayout theme="gray">
     <Hero {...heroContent} imageStyle="h-auto lg:w-[400px]" />
     <Testimonial {...newyorktimesTestimonial} className="mt-10 md:mt-20 lg:mt-32" />
     <BulletSection {...bulletSection1} className="mt-10 md:mt-20 lg:mt-32" />
@@ -177,7 +177,7 @@ const MediaEntertainmentPage = () => (
       heading="Cilium’s Solutions for Media and Entertainment"
       usecases={mediaUsecases}
     />
-    <Community className="mt-10 md:mt-20 lg:mt-32" isTitleCentered />
+    <Community className="mt-10 md:mt-20 lg:mt-32" theme="gray" isTitleCentered />
   </MainLayout>
 );
 
