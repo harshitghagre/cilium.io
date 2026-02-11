@@ -161,7 +161,7 @@ const aiTalks = [
   },
 ];
 
-const MediaEntertainmentPage = () => (
+const AiPage = () => (
   <MainLayout theme="gray">
     <Hero {...heroContent} imageStyle="h-auto lg:w-[350px]" />
     <BulletSection {...bulletSection1} className="mt-10 md:mt-20 lg:mt-32" />
@@ -180,7 +180,7 @@ const MediaEntertainmentPage = () => (
   </MainLayout>
 );
 
-export default MediaEntertainmentPage;
+export default AiPage;
 
 // eslint-disable-next-line react/prop-types
 export const Head = ({ location: { pathname } }) => {

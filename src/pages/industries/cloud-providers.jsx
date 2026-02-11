@@ -27,7 +27,7 @@ const heroContent = {
     'Cilium addresses these issues by presenting a unified networking solution tailored for Kubernetes that is compatible across various clouds, providing a consistent workflow that simplifies operations. Using eBPF, Cilium extends beyond Kubernetes basic networking capabilities, offering enhanced observability, security, and reduced latency. Major cloud providers, including Google Cloud, AWS, Azure, and Alibaba, have all standardized on Cilium for Kubernetes networking and security as a testament to its scalability, performance, and rich feature set. ',
   ],
   imageSrc: AstronautBee,
-  imageAlt: 'astronaut public speaking bee',
+  imageAlt: 'ebeedex astronaut bee',
 };
 
 const azureTestimonial = {
@@ -191,7 +191,7 @@ const cloudResouces = [
   },
 ];
 
-const MediaEntertainmentPage = () => (
+const CloudProvidersPage = () => (
   <MainLayout theme="gray">
     <Hero {...heroContent} imageStyle="h-auto lg:w-[350px]" />
     <Testimonial {...azureTestimonial} className="mt-10 md:mt-20 lg:mt-32" />
@@ -209,7 +209,7 @@ const MediaEntertainmentPage = () => (
   </MainLayout>
 );
 
-export default MediaEntertainmentPage;
+export default CloudProvidersPage;
 
 // eslint-disable-next-line react/prop-types
 export const Head = ({ location: { pathname } }) => {

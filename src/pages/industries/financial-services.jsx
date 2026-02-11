@@ -12,7 +12,7 @@ import Testimonial from 'components/pages/industries/testimonial';
 import Community from 'components/shared/community';
 import SEO from 'components/shared/seo';
 import GresearchOfficeImage from 'images/pages/industries/ai/gresearch-office.jpg';
-import CapitalOnefficeImage from 'images/pages/industries/financial-services/capitaloneoffice.png';
+import CapitalOneOfficeImage from 'images/pages/industries/financial-services/capitaloneoffice.png';
 import CornerBancaOfficeImage from 'images/pages/industries/financial-services/corneroffice.jpg';
 import FinanceImage1 from 'images/pages/industries/financial-services/finance-1.png';
 import FinanceImage2 from 'images/pages/industries/financial-services/finance-2.png';
@@ -22,17 +22,17 @@ import PostFinanceOfficeImage from 'images/pages/industries/financial-services/p
 import RabobankOfficeImage from 'images/pages/industries/financial-services/rabobank-office.jpeg';
 import RobinhoodOfficeImage from 'images/pages/industries/financial-services/robinhoodoffice.png';
 import SicrediOfficeImage from 'images/pages/industries/financial-services/sicredi-office.webp';
-import ExecelBee from 'images/pages/usecase/excel-bee.png';
+import ExcelBee from 'images/pages/usecase/excel-bee.png';
 import MainLayout from 'layouts/main';
 
 const heroContent = {
-  heading: 'Financial Services ',
+  heading: 'Financial Services',
   texts: [
     "Regulatory oversight is a hallmark of the financial industry. Cilium's detailed traffic monitoring and logging mechanisms support institutions in establishing transparent audit trails, complying with stringent regulations, and conducting forensic investigations.",
     "The world of fintech revolves around APIs – from mobile banking apps to trading platforms. Cilium's API-aware network security ensures that these critical APIs can be secured, empowering teams with the toolsets needed to understand and guard against malicious patterns in API calls. Cilium supports L7 policies (e.g., allow HTTP GET /foo) for fine-grained access control to shared API services running common cloud native protocols like HTTP, gRPC, Kafka, etc. Cilium also supports deny-based, cluster-wide, and host-layer firewall network policies.",
     'With Cilium, companies in the financial services industry can achieve improved observability, maintain security controls, and weave compliance and security governance for Kubernetes environments directly into the DevOps process.',
   ],
-  imageSrc: ExecelBee,
+  imageSrc: ExcelBee,
   imageAlt: 'ebeedex excel bee',
 };
 
@@ -62,7 +62,7 @@ const postfinanceStats = {
     },
     {
       heading: '7-75',
-      subHeading: 'Clusters',
+      subHeading: 'Nodes',
     },
     {
       heading: 'x12k',
@@ -98,7 +98,7 @@ const bulletSection1 = {
   imageSrc: FinanceImage3,
   imageAlt: 'cilium TLS keys and certificate illustration',
   imageRight: false,
-  imageStyle:"bg-white p-2 rounded-lg"
+  imageStyle: "bg-white p-2 rounded-lg"
 };
 
 const bulletSection3 = {
@@ -166,7 +166,7 @@ const financialResources = [
       'Cilium helped the Post Finance team build a scalable Kubernetes platform which meets the demanding requirements to run mission-critical banking software in production.',
   },
   {
-    imageSrc: CapitalOnefficeImage,
+    imageSrc: CapitalOneOfficeImage,
     imageAlt: 'capital office building',
     title: ' How Capital One used eBPF and Cilium to build a secure, maintainable PaaS',
     buttonLink: 'https://www.youtube.com/watch?v=hwOpCKBaJ-w',
@@ -218,7 +218,7 @@ const financialResources = [
     buttonLink: 'https://www.youtube.com/watch?v=HVPKSefazl4',
     buttonText: 'Watch The Talk',
     description:
-      'Corner Banca SA is a Swiss Bank and they use Cilium as the CNI for their on-prem Kubernetes clusters. Industry regulations require that traffic from a Kubernetes pods is identifiable for authentication, encryption and application of firewall rules. Corner Banca uses the Cilium egress gateway which allows routing outgoing traffic from one or more workloads to a specific egress IP.',
+      'Corner Banca SA is a Swiss Bank and they use Cilium as the CNI for their on-prem Kubernetes clusters. Industry regulations require that traffic from a Kubernetes pods are identifiable for authentication, encryption and application of firewall rules. Corner Banca uses the Cilium egress gateway which allows routing outgoing traffic from one or more workloads to a specific egress IP.',
   },
   {
     title: 'High-Scale Networking for ML Workloads With Cilium',

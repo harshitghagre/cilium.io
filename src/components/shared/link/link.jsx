@@ -29,6 +29,11 @@ const Link = ({ className: additionalClassName, to, type, theme, children, ...ot
     additionalClassName
   );
 
+  const props = { ...otherProps };
+  if (props.target === '_blank' && !props.rel) {
+    props.rel = 'noopener noreferrer';
+  }
+
   const smoothScroll = (to) => {
     const section = document.querySelector(to);
     section.scrollIntoView({ behavior: 'smooth' });
@@ -39,7 +44,7 @@ const Link = ({ className: additionalClassName, to, type, theme, children, ...ot
 
   if (to.startsWith('/#')) {
     return (
-      <a className={className} href={to} {...otherProps} aria-hidden="true">
+      <a className={className} href={to} {...props} aria-hidden="true">
         {content}
         {arrow}
       </a>
@@ -48,7 +53,7 @@ const Link = ({ className: additionalClassName, to, type, theme, children, ...ot
 
   if (to.startsWith('/')) {
     return (
-      <GatsbyLink className={className} to={to} {...otherProps}>
+      <GatsbyLink className={className} to={to} {...props}>
         {content}
         {arrow}
       </GatsbyLink>
@@ -62,7 +67,7 @@ const Link = ({ className: additionalClassName, to, type, theme, children, ...ot
         onClick={() => {
           smoothScroll(to);
         }}
-        {...otherProps}
+        {...props}
         aria-hidden="true"
       >
         {content}
@@ -72,7 +77,7 @@ const Link = ({ className: additionalClassName, to, type, theme, children, ...ot
   }
 
   return (
-    <a className={className} href={to} {...otherProps}>
+    <a className={className} href={to} {...props}>
       {content}
       {arrow}
     </a>

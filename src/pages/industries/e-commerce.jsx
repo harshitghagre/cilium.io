@@ -32,7 +32,7 @@ const heroContent = {
     'Join the next wave of high-performance e-commerce platforms leveraging the advanced capabilities of eBPF with Cilium to build scalable and secure e-commerce experiences. Gain the edge in speed, security, and observability.',
   ],
   imageSrc: TravelBee,
-  imageAlt: 'ebeedex public speaking bee',
+  imageAlt: 'ebeedex travel bee',
 };
 
 const tripStats = {
@@ -57,7 +57,7 @@ const tripStats = {
   ],
 };
 
-const bullectSection1 = {
+const bulletSection1 = {
   heading:
     'Build Globally Distributed Services. Gain The Edge in Speed, Security, and Observability',
   paragraphs: [
@@ -224,11 +224,11 @@ const ecommerceFeatures = {
   ],
 };
 
-const MediaEntertainmentPage = () => (
+const EcommercePage = () => (
   <MainLayout theme="gray">
     <Hero {...heroContent} imageStyle="h-auto lg:w-[350px]" />
     <Stats {...tripStats} className="mt-10 md:mt-20 lg:mt-32" />
-    <BulletSection {...bullectSection1} className="mt-10 md:mt-20 lg:mt-32" />
+    <BulletSection {...bulletSection1} className="mt-10 md:mt-20 lg:mt-32" />
     <Testimonial {...trendyolTestimonial} className="mt-10 md:mt-20 lg:mt-32" />
     <FeatureCard {...ecommerceFeatures} className="mt-10 md:mt-20 lg:mt-32" />
     <Testimonial {...dbSchenkerTestimonial} className="mt-10 md:mt-20 lg:mt-32" />
@@ -242,7 +242,7 @@ const MediaEntertainmentPage = () => (
   </MainLayout>
 );
 
-export default MediaEntertainmentPage;
+export default EcommercePage;
 
 // eslint-disable-next-line react/prop-types
 export const Head = ({ location: { pathname } }) => {

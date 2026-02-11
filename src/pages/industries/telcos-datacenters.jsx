@@ -24,7 +24,7 @@ const heroContent = {
     'Simplify your Telco and data center networks, comply with regulatory requirements, and ease your cloud native journey with Cilium. ',
   ],
   imageSrc: BulldozerBee,
-  imageAlt: 'ebeedex public speaking bee',
+  imageAlt: 'ebeedex bulldozer bee',
 };
 
 const bellTestimonial = {
@@ -41,7 +41,7 @@ const bellTestimonial = {
 
 const bulletSection1 = {
   heading:
-    'Simplify Integration Between Kubernetes Environments and Existing Network Infrastructure With CIlium’s BGP',
+    'Simplify Integration Between Kubernetes Environments and Existing Network Infrastructure With Cilium’s BGP',
   paragraphs: [
     'Telco and data center operators often have a blend of cloud native and legacy systems that require seamless communication. BGP, a common data center connectivity protocol is not natively integrated in Kubernetes.',
     "With Cilium's native BGP support, operators can interconnect their legacy environment with a Cilium-managed environment, integrate seamlessly with Top of Rack devices, and automatically advertise pod CIDRs to BGP neighbors. Operators can also significantly reduce CAPEX by leveraging Cilium's standalone load balancer to replace expensive legacy hardware load balancers.",
@@ -68,7 +68,7 @@ const bulletSection3 = {
   ],
   imageSrc: TelcoImage3,
   imageAlt: 'cilium SRv6',
-  imageStyle:"bg-white p-2 rounded-lg"
+  imageStyle: "bg-white p-2 rounded-lg"
 };
 
 const telcoTalks = [
@@ -141,7 +141,7 @@ const telcoUsecases = [
   },
 ];
 
-const MediaEntertainmentPage = () => (
+const TelcosDatacentersPage = () => (
   <MainLayout theme="gray">
     <Hero {...heroContent} />
     <Testimonial {...bellTestimonial} className="mt-10 md:mt-20 lg:mt-32" />
@@ -162,7 +162,7 @@ const MediaEntertainmentPage = () => (
   </MainLayout>
 );
 
-export default MediaEntertainmentPage;
+export default TelcosDatacentersPage;
 
 // eslint-disable-next-line react/prop-types
 export const Head = ({ location: { pathname } }) => {
